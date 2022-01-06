@@ -19,7 +19,7 @@ function generate_array(){
     cont.innerHTML="";
 
     for(var i=0;i<array_size;i++){
-        div_sizes[i]=Math.floor(Math.random() * 0.8*(inp_as.max - inp_as.min))+5; 
+        div_sizes[i]=Math.floor(Math.random() * 0.8*(inp_as.max - inp_as.min))+10; 
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size=0.1;
@@ -61,6 +61,10 @@ function runalgo(){
                         break;
         case "Quick":Quick();
                         break;
+        case "Insertion":Insertion();
+                        break;
+        case "Selection":Selection_sort();
+                        break;                
         case "Heap":Heap();
                         break;
     }

@@ -27,8 +27,7 @@ function max_heapify(n,i){
     var r=2*i+2;
 
     if(l<n && div_sizes[l]>div_sizes[largest]){
-        if(largest!=i)
-        {
+        if(largest!=i){
             div_update(divs[largest],div_sizes[largest],"blue");//Color update
         }
 
@@ -38,8 +37,7 @@ function max_heapify(n,i){
     }
 
     if(r<n && div_sizes[r]>div_sizes[largest]){
-        if(largest!=i)
-        {
+        if(largest!=i){
             div_update(divs[largest],div_sizes[largest],"blue");//Color update
         }
 
